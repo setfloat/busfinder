@@ -1,0 +1,24 @@
+#biggersize {
+  width: 100%;
+	margin: 8px auto;
+  /*max-width: 600px;*/
+  
+  max-height: 100vh;
+}
+
+#size {
+  width: 100%;
+	padding-top: 100%;
+	position: relative;
+	background: mintcream;
+  }
+
+#map {
+  position: absolute;
+	top: 0; bottom: 0; left: 0; right: 0;
+  padding: 0;
+	text-align: center;
+  box-sizing: padding-box;
+  font-size: 0;
+  border: 0px;
+}
