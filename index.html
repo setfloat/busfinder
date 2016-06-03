@@ -13,77 +13,46 @@
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <script src="js/jquery-2.2.4.min.js"></script>
-
   </head>
   <body>
     <div class="navbar-fixed"> <!-- Nav Begin -->
       <nav>
         <div class="nav-wrapper">
-          <a href="#!" class="brand-logo">Out the Door</a>
-          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-          </ul>
-          <ul class="side-nav red accent-2" id="mobile-demo">
-            <li class="active"><a class="white-text" href="index.html">Home</a></li>
-            <li><a class="white-text" href="order.html">Ordering</a></li>
-          </ul>
-        </div>
+          <div class="row">
+            <div class="col s4">
+              <a href="#!" class="brand-logo text-align center">Out the Door</a>
+            </div>
+            <div class="col s4">
+              <a href="https://twitter.com/setfloat">@setFloat</a>
+            </div>
+          </div>
       </nav>
     </div>    <!-- Nav End  -->
-
-    <div>   <!-- Main page container  -->
+    <main>   <!-- Main page container  -->
       <div class="row">   <!-- Split Default Buses / Query  -->
-        <div class="col s12 m8"> <!-- Bus card area Begin -->
-          <div class="row addCard"> <!-- Bus card row Begin -->
-
-
-          </div>    <!-- Bus Card Row End -->
-        </div>    <!-- Bus card area End -->
-        <div class="col s12 m4"> <!-- Query area Begin  -->
+        <div class="col s12 m7 l5"> <!-- Query area Begin  -->
           <div class="row">  <!-- Map row begin. -->
             <div class ="col s12"> <!-- Map Col begins -->
-              <div id="biggersize">
-                <div id="size">
-                  <div id="map">
-
-
-
-
-                  </div>
+              <div id="biggersize"> <!-- Map window begins -->
+                <div id="size" class="s12 m12 l12">
+                  <div id="map"></div>
                 </div>
-              </div>
+              </div>  <!-- Map window ends -->
             </div> <!-- Map Col ends -->
           </div>  <!-- Map row End  -->
-          <div class="row">   <!-- Query row begin  -->
-            <form>
-              <div class="input-field col s12">
-                <select multiple>
-                  <option value="" disabled selected>Choose your option</option>
-                  <option value="1"><a type="link" href="http://www.lorempixel.com/400/300/">Option 1</a></option>
-                  <option value="2">Option 2</option>
-                  <option value="3">Option 3</option>
-                </select>
-                <label>Materialize Multiple Select</label>
-              </div>
-              <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-                <i class="material-icons right">send</i>
-              </button>
-            </form>
-            <div class="">    <!-- Example Query Card Begin -->
-            </div>            <!-- Example Query Card End -->
-
-            <div class="">    <!-- Add stopID Query Search Begin -->
-            </div>            <!-- Add stopId Query Search End -->
-          </div>              <!-- Query Row end -->
         </div>                <!-- Query Area End -->
+        <div class="col s12 m5 l7"> <!-- Bus card area Begin -->
+          <div class="row addCard"> <!-- Bus card row Begin -->
+          </div>    <!-- Bus Card Row End -->
+        </div>    <!-- Bus card area End -->
       </div>      <!-- Split default buses/Query row end -->
-    </div>      <!-- Main Page container End  -->
-
-    <div>     <!-- Footer Begin -->
-              <!--  Footer style/content determine last/late -->
-    </div>    <!-- Footer End -->
+    </main>      <!-- Main Page container End  -->
+    <footer class="page-footer tc">     <!-- Footer Begin -->
+      
+      <div class="footer-copyright">
+        <div class="container">© 2016 Patrick Richardson</div>
+      </div>
+    </footer>    <!-- Footer End -->
     <script src='js/materialize.min.js'></script>
     <script src='js/app.js'></script>
   </body>

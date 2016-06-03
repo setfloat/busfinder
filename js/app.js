@@ -94,7 +94,7 @@
 
     var addCard = function ()
     {
-      $('.addCard').append(`<div class="col s12 m6 l4"><div class="card"><div class="card-image waves-effect waves-block waves-light"><img class="activator" src=${busBackground()}></div><div class="card-content"><span class=" activator grey-text text-darken-4">${busDisplay()}<i class="material-icons right">more_vert</i></span><p>${predictTime}</p><h6 class="right-align"><a href="${stopHref}">${stopAddy()}</a></h6></div><div class="card-reveal" style="background:url(${busBackground()})"><span class="card-title grey-text text-darken-4"> Card Title<i class="material-icons right">close</i></span></div></div></div>`);
+      $('.addCard').append(`<div class="col s12 l6"><div class="card"><div class="card-image waves-effect waves-block waves-light"><img class="activator" src=${busBackground()}></div><div class="card-content"><span class=" activator grey-text text-darken-4">${busDisplay()}<i class="material-icons right">more_vert</i></span><p>${predictTime}</p><h6 class="right-align"><a href="${stopHref}">${stopAddy()}</a></h6></div><div class="card-reveal" style="background:url(${busBackground()})"><span class="card-title grey-text text-darken-4"> Card Title<i class="material-icons right">close</i></span></div></div></div>`);
     }
 
 

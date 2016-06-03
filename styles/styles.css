@@ -1,17 +1,32 @@
+body {
+   display: flex;
+   min-height: 100vh;
+   flex-direction: column;
+   background-color: #ADFF66;
+ }
+
+ main {
+   flex: 1 0 auto;
+ }
+
 #biggersize {
   width: 100%;
 	margin: 8px auto;
   /*max-width: 600px;*/
-  
   max-height: 100vh;
 }
 
 #size {
-  width: 100%;
-	padding-top: 100%;
-	position: relative;
-	background: mintcream;
-  }
+    width: 100%;
+  	position: relative;
+    padding-bottom: 140%;
+  	background: mintcream;
+    }
+
+.tc {
+  background: #2C90D0 !important;
+}
+
 
 #map {
   position: absolute;
@@ -21,4 +36,12 @@
   box-sizing: padding-box;
   font-size: 0;
   border: 0px;
+}
+
+nav {
+  background-color: #2C90D0;
+}
+
+.card-content {
+  background-color: #F7BC3D;
 }
