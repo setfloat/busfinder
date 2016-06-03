@@ -13,6 +13,7 @@
   var hello;
   var current;
   var hella;
+  var myStops;
 
     // Below is the mapApi pull
   var loadgMapApi = $.getScript('https://maps.googleapis.com/maps/api/js?key=AIzaSyC7mnD1MCwxepaSfwFH9d8nUtHCMCEiMCo&libraries=places');
@@ -41,6 +42,10 @@
   {
     current = data.currentTime;
     stopId = data;
+
+
+
+
     hello = function(){
 
     console.log( "xhr status is " + $xhr.status)
@@ -94,7 +99,7 @@
 
     var addCard = function ()
     {
-      $('.addCard').append(`<div class="col s12 l6"><div class="card"><div class="card-image waves-effect waves-block waves-light"><img class="activator" src=${busBackground()}></div><div class="card-content"><span class=" activator grey-text text-darken-4">${busDisplay()}<i class="material-icons right">more_vert</i></span><p>${predictTime}</p><h6 class="right-align"><a href="${stopHref}">${stopAddy()}</a></h6></div><div class="card-reveal" style="background:url(${busBackground()})"><span class="card-title grey-text text-darken-4"> Card Title<i class="material-icons right">close</i></span></div></div></div>`);
+      $('.addCard').append(`<div class="col s12 l6"><div class="card"><div class="card-image waves-effect waves-block waves-light"><img class="activator" src=${busBackground()}></div><div class="card-content"><span class=" activator grey-text text-darken-4">${busDisplay()}<i class="material-icons right">more_vert</i></span><p>${predictTime}</p><h6 class="right-align"><a href="${stopHref}">${stopAddy()}</a></h6></div><div class="card-reveal" style="background:url(${busBackground()})"><span class="card-title grey-text text-darken-4"><<i class="material-icons right">close</i></span></div></div></div>`);
     }
 
 
@@ -154,8 +159,8 @@
         var resp = $xhrlat.responseText;
 
           if (resp.indexOf('"id"') === -1) {
+            var cello = undefined;
               return console.log('this works');
-              var cello = undefined;
 
             }
             var cello = resp.slice(resp.indexOf('"id"') + 6, resp.indexOf('"id"') + 13);
