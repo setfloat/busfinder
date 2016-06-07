@@ -37,22 +37,23 @@
           predicted = 'NOW';
         }
         if (predicted === -1 || predicted === -2 || predicted === -3) {
-          predicted = 'Missed'
+          predicted = 'Missed';
         }
 
         return predicted;
       };
 
       const busDisplay = function() {
-        return `${stopId.data.entry.arrivalsAndDepartures[0].routeShortName} ${stopId.data.entry.arrivalsAndDepartures[0].tripHeadsign}`;
+        return `${stopId.data.entry.arrivalsAndDepartures[0].routeShortName
+        } ${stopId.data.entry.arrivalsAndDepartures[0].tripHeadsign}`;
       };
 
       const stopAddy = function() {
         return stopId.data.references.stops[0].name;
       };
 
-      let stopLat = stopId.data.references.stops[0].lat;
-      let stopLon = stopId.data.references.stops[0].lon;
+      const stopLat = stopId.data.references.stops[0].lat;
+      const stopLon = stopId.data.references.stops[0].lon;
 
       // display the google busbackground function
       const busBackground = function() {
@@ -137,7 +138,7 @@
                   });
 
                   const $powxhr = $.getJSON(`https://cors-anywhere.herokuapp.com/api.pugetsound.onebusaway.org/api/where/arrivals-and-departures-for-stop/${cello}.json?key=TEST`);
-                  
+
                   $powxhr.done(function(data) {
                     current = data.currentTime;
                     stopId = data;
