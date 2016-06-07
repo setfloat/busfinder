@@ -1,0 +1,33 @@
+Name: Out the Door
+
+Problem: Getting the realtime next bus for a stop on google Maps.
+
+Who has this problem: Everyone has this problem. Me.
+
+
+APIs:
+  One bus away
+  Google maps
+  Google places
+
+How the APIs work:
+  Google map loads
+  Map logs click
+  JS converts location to Lat/Long
+  OBA returns stopId based on Lat/Long
+  OBA returns next bus info using stopId
+  Card Generates pulling data from:
+    OBA
+    google
+
+Technologies:
+  HTML
+  CSS
+  JavaScript
+  AJAX/JSON
+
+Feedback:
+  Using the map instead of the pregenerated stop list.
+
+Biggest Challenge:
+  CORS roadblocked my weekend
