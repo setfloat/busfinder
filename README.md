@@ -1,4 +1,4 @@
-# busfinder
+# Busfinder
 Web Development Q1 Project
 
 This project was my quarter one project in the Galvanize web develoment immersive.  The intent of the project was to utilize emerging javascript, jquery, html, and css skills to create a site that called an API and showed some functionality.
