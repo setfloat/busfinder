@@ -1,4 +1,4 @@
-User: People at/near my house
+###User: People at/near my house
 
 What: Info page for my house/immediate neighbors. Local Bus times for nearby stops as core feature. Possibly weather services as well.
 
@@ -36,24 +36,3 @@ Features:
 
     Add stop feature? #complicated, next level?
       Do the specific stops and if I get those working, add a feature for user to select and add stops (maybe from a list or from the open api/ a map).
-
-
-    Extra Credit Feature: Weather. Would be nice.
-
-
-------------------------------------------------------------
-
-<html>
-  <head>
-  </head>
-  <body>
-    <nav>
-    </nav>
-    <div>
-    </div>
-    <footer>
-    </footer>
-
-
-  </body>
-</html>
